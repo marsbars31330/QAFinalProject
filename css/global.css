@@ -227,6 +227,7 @@
  .navbar{
        padding-top:36px;
        z-index:90;
+       padding-left:0;
    }
 
  .nav-main ul {
@@ -282,7 +283,7 @@
  }
 
  /* Mobile Nav: media queries for small screens  */
- @media screen and (max-width:48em){
+ @media screen and (max-width:414px){
    /* media query creates a break point and changes the style of the mobile nav menu */
    /* @media screen and (condition | max-width | min-width ) */
    /* anything less than 48em, the restyling occurs */
