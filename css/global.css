@@ -1,0 +1,385 @@
+ /* Desktop Styling (colors, font...) */
+ @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+ html,body,.navbar{
+     background-color:#0E0A32;
+     font-size: 62.5%;
+     
+ }
+ h1,h2,li{
+     color:#FFB756;
+     font-family: 'Gloria Hallelujah', cursive;
+ }
+ h1{
+   font-size:4.8rem;
+ }
+ h2{
+   font-size:6.4rem;
+ }
+ h3{
+   font-family: 'Gloria Hallelujah', cursive;
+   font-size:18px;
+   color:#BCCCDC;
+ }
+ p,h4,h5,h6,.btn{
+   color:#BCCCDC;
+   font-family:'Source Sans Pro', sans-serif;
+ }
+ p,li{
+     font-size:18px;
+ }
+ body{
+     padding-left:54px;
+ }
+  /* Sections --- Intro */
+  #spaceship img{
+     width:235px;
+     height:auto;
+ }
+
+ /* Sections --- Stats */
+   #stats h1{
+       font-size:6.4rem;
+   }
+   .card{
+       padding:36px 0;
+   }
+   #active{
+       background-color:#FFB756;
+   }
+   #deaths{
+       background-color:#BA070B;
+   }
+   #recovered{
+       background-color:#075AEE;
+   }
+   .card-text,.card-title{
+       color:black;
+   }
+   .footnote{
+       color:#BCCCDC;
+       margin-left:2.5vw;
+   }
+   #fluff{
+       width:357px;
+       height:213px;
+       background: url(../img/2.jpg) center no-repeat ;
+       background-size:contain;
+   }
+   #earth{
+       background:url(../img/3.jpg) center no-repeat;
+       background-size:contain;
+   }
+
+   /* Section --- Comic */
+   .comic{
+       width:100%;
+   }
+   #comicOne{
+       background:url(../img/4.jpg) no-repeat;
+       background-size:contain;
+       height:45vw;    
+   }
+   #comicTwo{
+       background:url(../img/5.jpg) bottom no-repeat;
+       background-size:contain;
+       height:47.5vw;  
+   }
+   #comicThr{
+       background:url(../img/6.jpg) bottom no-repeat;
+       background-size:contain;
+       height:50vw;   
+   }
+    /* Section --- Protect */
+   .featurette-heading {
+       font-size:3.6rem;
+       line-height: 5.2rem; 
+   }
+   .title{
+       font-size:6.4rem;
+   }
+   .subtitle{
+       text-decoration:underline;
+       font-size:1.8rem;
+       color:#BCCCDC;
+   }
+   .btn{
+       height:10.2rem;
+       font-size:2.4rem;
+       background-color:#075AEE;
+   }
+   .collapse{
+       font-size: 1.8rem;
+       border: 2px solid #075AEE;
+       border-radius: 0 0 1.6rem 1.6rem;
+   }
+   .collapse .card-body{
+       background-color: rgba(0,0,0,0);
+       color:#BCCCDC;
+   }
+   .tips ul{
+       padding-left:2.4rem;
+       padding-bottom:1.6rem;
+   }
+   .tips ul li{
+       font-family: 'Source Sans Pro', sans-serif;
+       font-weight:300;
+       color:#BCCCDC;
+       list-style:circle;
+   }
+   .tips h5{
+       font-size:2.4rem;
+       color:#075AEE;
+       font-weight:700;
+   }
+   .tips p{
+       font-weight:300;
+   }
+   .subheading{
+       color:#FFB756;
+       font-family: 'Gloria Hallelujah', cursive;
+       font-size:2.4rem;
+       padding-bottom:1rem;
+   }
+   #slogan{
+       color:#BCCCDC;
+       font-size:6.4rem;
+       line-height:1.2;
+       padding:1.2rem 0;
+   }
+   footer{
+       color:#BCCCDC;
+       font-size:1.2rem;
+       padding:3.6rem 0 2.4rem 0;
+   }
+   .fab-top{
+       padding:0 2.4rem;
+       position:sticky;
+       top:90vh;
+       z-index:100;
+       opacity:0.6;
+   }
+
+   /* basic hamburger menu */
+ .nav-icon {
+   margin: 0.5em;
+   width: 40px;
+   display: none;
+   position:fixed;
+     top:.75%;
+     left:84%;
+     z-index: 999;
+   
+ }
+
+ .nav-icon:after,
+ .nav-icon:before,
+ .nav-icon div{
+   background-color:#BCCCDC;
+   border-radius: 3px;
+   content: '';
+   display: block;
+   height: 5px;
+   margin: 7px 0;
+   transition: all .2s ease-in-out;
+ }
+ /* creates the 3 bars of the hamburger menu: after - bottom bar, middle-div, before-top*/
+
+ /* Hamburger menu animations */
+
+ .nav-icon:hover:before {
+   transform: translateY(12px) rotate(135deg);
+ }
+
+ .nav-icon:hover:after {
+   transform: translateY(-12px) rotate(-135deg);
+ }
+
+ .nav-icon:hover div{
+   transform: scale(0);
+ }
+  /* Part 2 Mobile Nav and Overlay */
+ 
+ ul {
+   margin:0;
+   padding: 0;
+
+ }
+
+ ul li {
+   list-style: none;
+ }
+
+ .overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background:#0E0A32;
+   overflow: auto;
+   z-index: 99;
+ }
+
+ /* Main navigation */
+ .navbar{
+       padding-top:36px;
+       z-index:90;
+   }
+
+ .nav-main ul {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .nav-main ul li a {
+   color:#BCCCDC;
+   font-size: 1em;
+   text-decoration: none;
+ }
+
+ .nav-main {
+       display:flex;
+       justify-content: flex-end;
+       position:relative;
+       top:30px;	
+   }
+   
+   .nav-right {
+       display: initial;
+       display: inline-flex;
+       flex-direction: row;
+       justify-content: flex-end;	
+   }
+
+
+ /* Mobile Navigation : if required */
+
+ .mobile {
+   /* text-align: right; */
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ .mobile ul.mobile-nav{
+   display:flex;
+   flex-direction:column;
+   max-width: 90%;
+   padding: 150px 0px 100px;
+ }
+
+ .mobile ul.mobile-nav>li {
+   width: 100%;
+   padding: 20px 0;
+ }
+
+ .mobile ul.mobile-nav li a {
+   color:#FFB756;
+   font-size: 5vh;
+   text-decoration: none;
+ }
+
+ /* Mobile Nav: media queries for small screens  */
+ @media screen and (max-width:48em){
+   /* media query creates a break point and changes the style of the mobile nav menu */
+   /* @media screen and (condition | max-width | min-width ) */
+   /* anything less than 48em, the restyling occurs */
+   
+   /* Mobile spacing */
+   body{
+       padding:0 20px; 
+   }
+   /* Mobile Navigation menu */
+   
+   .nav-icon{
+     display:inline;
+     position:fixed; 
+   }
+
+   .navbar{
+       padding-top:20px;
+       padding-left:0;
+   }
+
+   #siteTitle h1{
+       width:90vw;
+   }
+
+   #siteTitle h3{
+       width:65vw;
+   }
+
+   .mobile ul.mobile-nav >li {
+     text-transform: uppercase;
+     width: 100%;
+     padding: 20px;
+     border-bottom: 1px solid #FFB756;
+   }
+   
+   .mobile ul.mobile-nav {
+     padding: 30px 0px 0px;
+     text-align: center;
+   }
+
+   .nav-main ul{
+     opacity: 0;
+     display:none;
+   }
+   /* main menu disappears if the screen is too small */
+   
+   /* Styling --- Mobile  */
+  
+   /* Sections --- Intro */
+   #spaceship img{
+      position:relative;
+      left:30vw;
+      top:-4vh;
+   }
+   #spaceship{
+     height:185px;
+   } 
+   #intro p{
+       font-size:24px;
+   }
+   /* Sections --- Stats */
+   #stats h1{
+       font-size:3.6rem;
+       line-height:4.6rem;
+       padding-top:2rem;
+   }
+   #earth{
+       height:75vw;
+   }
+   #fluff{
+       height:9.8rem;
+       background-position:right;
+   }
+   .card{
+       padding:2.4rem 0;
+   }
+   /* Sections --- Comic */
+   #comicOne, #comicTwo, #comicThr{
+       height:125vw;
+       margin-left:.8rem;
+   }
+    /* Section --- Protect */
+    .title {
+       font-size:3.6rem;
+   }
+   .subtitle{
+       text-decoration:underline;
+       font-size:1.8rem;
+       color:#BCCCDC;
+       float:right;
+   }
+   .featurette-heading{
+       font-size:3rem;
+       line-height:1.1;
+   }
+   .btn{
+       font-size:1.8rem;
+   }
+   #slogan{
+       font-size:3.6rem;
+   }
+ }
