@@ -59,6 +59,9 @@
    .footnote{
        color:#BCCCDC;
        margin-left:2.5vw;
+       font-size:1.2rem;
+       font-weight:300;
+       font-style:italic;
    }
    #fluff{
        width:357px;
