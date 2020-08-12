@@ -51,7 +51,7 @@
        background-color:#F75557;
    }
    #recovered{
-       background-color:#075AEE;
+       background-color:#377DF6;
    }
    .card-text,.card-title{
        color:black;
@@ -106,11 +106,11 @@
    .btn{
        height:10.2rem;
        font-size:2.4rem;
-       background-color:#075AEE;
+       background-color:#377DF6;
    }
    .collapse{
        font-size: 1.8rem;
-       border: 2px solid #075AEE;
+       border: 2px solid #377DF6;
        border-radius: 0 0 1.6rem 1.6rem;
    }
    .collapse .card-body{
@@ -129,7 +129,7 @@
    }
    .tips h5{
        font-size:2.4rem;
-       color:#075AEE;
+       color:;
        font-weight:700;
    }
    .tips p{
