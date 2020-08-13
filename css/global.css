@@ -287,7 +287,7 @@
   /* Styling for iPad */
   @media screen and (max-width:768px){
     body{
-     padding:0 2.2rem;
+     padding:0 3.6rem;
     }
     #earth{
       height:75vw;
@@ -296,6 +296,17 @@
       height:150px;
       position:relative;
       left:200px;
+    }
+    .subtitle{
+      float:right;
+      position:relative;
+      top:4.2rem;
+    }
+    #slogan{
+      font-size:4.8rem;
+    }
+    #links ul li{
+      padding:1rem 0;
     }
  }
  /* Mobile Nav: media queries for small screens  */
@@ -391,10 +402,10 @@
        font-size:3.6rem;
    }
    .subtitle{
-       text-decoration:underline;
        font-size:1.8rem;
        color:#BCCCDC;
        float:right;
+       top:0;
    }
    .featurette-heading{
        font-size:3rem;
