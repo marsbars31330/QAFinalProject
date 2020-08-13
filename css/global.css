@@ -234,8 +234,15 @@
    }
 
  .nav-main ul {
-   display: flex;
-   justify-content: space-between;
+   /* display: flex;
+   justify-content: space-between; */
+   display:table;
+   width:700px;
+ }
+
+ .nav-main ul li{
+   display:table-cell;
+   text-align:center;
  }
 
  .nav-main ul li a {
@@ -243,14 +250,26 @@
    font-size: 1em;
    text-decoration: none;
  }
-
+ .nav-item:after{
+   height:2px;
+   width:0;
+   position:relative;
+   left:50%;
+   background:#FFB756;
+   display:block;
+   content:"";
+   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+ }
+ .nav-item:hover:after{
+  width: 100%; 
+  left: 0; 
+ }
  .nav-main {
        display:flex;
        justify-content: flex-end;
        position:relative;
-       top:1.5rem;;	
-   }
-   
+       top:1.5rem;
+  }
    .nav-right {
        display: initial;
        display: inline-flex;
