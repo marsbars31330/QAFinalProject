@@ -297,12 +297,17 @@
    width: 100%;
    padding: 20px 0;
  }
-
- .mobile ul.mobile-nav li a {
+ .mobile-nav li a{
    color:#FFB756;
    font-size: 5vh;
    text-decoration: none;
  }
+ .mobile-nav li a:hover{
+   color:#0E0A32;
+ }
+ .mobile-nav li:hover{
+  background-color:#FFB756;
+}
   /* Styling for iPad */
   @media screen and (max-width:768px){
     body{
