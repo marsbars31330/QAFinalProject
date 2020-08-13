@@ -208,7 +208,6 @@
  ul {
    margin:0;
    padding: 0;
-
  }
 
  ul li {
@@ -222,7 +221,6 @@
    height: 100%;
    width: 100%;
    background:#0E0A32;
-   overflow: auto;
    z-index: 99;
  }
 
@@ -302,10 +300,10 @@
    font-size: 5vh;
    text-decoration: none;
  }
- .mobile-nav li a:hover{
+ .mobile-nav li a:active{
    color:#0E0A32;
  }
- .mobile-nav li:hover{
+ .mobile-nav li:active{
   background-color:#FFB756;
 }
   /* Styling for iPad */
