@@ -362,6 +362,9 @@
    .card{
        padding:2.4rem 0;
    }
+   .card h3,p{
+       font-size: 1.6rem;
+   }
    /* Sections --- Comic */
    #comicOne, #comicTwo, #comicThr{
        height:125vw;
@@ -387,4 +390,11 @@
    #slogan{
        font-size:3.6rem;
    }
+ }
+
+ /* Styling for iPad */
+ @media screen and (max-width:768px){
+    body{
+     padding:0 2.2rem;
+    }
  }
