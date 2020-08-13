@@ -3,9 +3,12 @@
  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
  html,body,.navbar{
      background-color:#0E0A32;
-     font-size: 62.5%;
-     
+     font-size: 62.5%; 
  }
+ html,body{
+   width:100%;
+ }
+ 
  h1,h2,li{
      color:#FFB756;
      font-family: 'Gloria Hallelujah', cursive;
@@ -155,11 +158,12 @@
        padding:3.6rem 0 2.4rem 0;
    }
    .fab-top{
-       padding:0 2.4rem;
-       position:sticky;
-       top:90vh;
-       z-index:100;
-       opacity:0.6;
+    padding:0 2.4rem;
+    position:sticky;
+    position: -webkit-sticky;
+    top:92vh;
+    z-index:100;
+    opacity:0.6;
    }
 
    /* basic hamburger menu */
@@ -170,8 +174,7 @@
    position:fixed;
      top:.75%;
      left:84%;
-     z-index: 999;
-   
+     z-index: 999;  
  }
 
  .nav-icon:after,
@@ -281,7 +284,20 @@
    font-size: 5vh;
    text-decoration: none;
  }
-
+  /* Styling for iPad */
+  @media screen and (max-width:768px){
+    body{
+     padding:0 2.2rem;
+    }
+    #earth{
+      height:75vw;
+    }
+    #fluff{
+      height:150px;
+      position:relative;
+      left:200px;
+    }
+ }
  /* Mobile Nav: media queries for small screens  */
  @media screen and (max-width:414px){
    /* media query creates a break point and changes the style of the mobile nav menu */
@@ -392,9 +408,4 @@
    }
  }
 
- /* Styling for iPad */
- @media screen and (max-width:768px){
-    body{
-     padding:0 2.2rem;
-    }
- }
+
