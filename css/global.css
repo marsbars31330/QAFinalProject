@@ -107,7 +107,10 @@
        height:50vw;   
    }
     /* Section --- Protect */
-   .featurette-heading {
+   #secProtect{
+     width:990px;
+   }
+    .featurette-heading {
        font-size:3.6rem;
        line-height: 5.2rem; 
    }
@@ -332,6 +335,9 @@
     }
     #fluff{
       height:150px;
+    }
+    #secProtect{
+      width:auto;
     }
     .subtitle{
       float:right;
