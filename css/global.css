@@ -34,6 +34,14 @@
  body{
      padding-left:54px;
  }
+ #siteTitle h1{
+  padding-left:0;
+}
+
+#siteTitle h3{
+  padding-left:0;
+}
+
   /* Sections --- Intro */
   #spaceship img{
      width:235px;
@@ -173,7 +181,7 @@
    display: none;
    position:fixed;
      top:.75%;
-     left:84%;
+     left:80%;
      z-index: 999;  
  }
 
@@ -235,7 +243,7 @@
    /* display: flex;
    justify-content: space-between; */
    display:table;
-   width:700px;
+   width:600px;
  }
 
  .nav-main ul li{
@@ -245,7 +253,7 @@
 
  .nav-main ul li a {
    color:#BCCCDC;
-   font-size: 1em;
+   font-size: 1.4rem;
    text-decoration: none;
  }
  .nav-item:after{
@@ -311,13 +319,17 @@
     body{
      padding:0 3.6rem;
     }
+    .nav-main{
+      width:650px;
+    }
+    .nav-main ul li a{
+      font-size:1.4rem;
+    }
     #earth{
       height:75vw;
     }
     #fluff{
       height:150px;
-      position:relative;
-      left:200px;
     }
     .subtitle{
       float:right;
@@ -340,6 +352,7 @@
    /* Mobile spacing */
    body{
        padding:0 20px; 
+       width:100vw;
    }
    /* Mobile Navigation menu */
    
@@ -386,7 +399,7 @@
    /* Sections --- Intro */
    #spaceship img{
       position:relative;
-      left:30vw;
+      left:20vw;
       top:-4vh;
    }
    #spaceship{
@@ -407,6 +420,7 @@
    #fluff{
        height:9.8rem;
        background-position:right;
+
    }
    .card{
        padding:2.4rem 0;
